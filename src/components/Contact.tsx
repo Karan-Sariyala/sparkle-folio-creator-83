@@ -4,8 +4,8 @@ import { Mail, MapPin, Phone, Linkedin, Instagram, Send, Loader2, CheckCircle } 
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "John Doe",
-    email: "john@company.com",
+    name: "",
+    email: "",
     subject: "Project Collaboration",
     message: "Hi Karan, I came across your portfolio and I'm impressed by your work. I'd love to discuss a potential project collaboration. Looking forward to hearing from you!",
   });
