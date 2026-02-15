@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import profilePhoto from "@/assets/profile-photo.jpeg";
 
 const Hero = () => {
   return (
@@ -9,6 +10,21 @@ const Hero = () => {
       </div>
       
       <div className="relative z-10 max-w-4xl text-center">
+        {/* Profile Photo */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className="mx-auto mb-8 h-32 w-32 overflow-hidden rounded-full border-2 border-primary/50 shadow-lg md:h-40 md:w-40"
+          style={{ boxShadow: "var(--shadow-glow)" }}
+        >
+          <img
+            src={profilePhoto}
+            alt="Karan Sariyala"
+            className="h-full w-full object-cover"
+          />
+        </motion.div>
+
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
