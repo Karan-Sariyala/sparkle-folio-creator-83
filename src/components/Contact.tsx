@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, Phone, Linkedin, Github } from "lucide-react";
+import { Mail, MapPin, Phone, Linkedin, Github, Instagram } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -62,6 +62,14 @@ const Contact = () => {
               className="flex h-12 w-12 items-center justify-center rounded-full border border-border text-muted-foreground transition-all hover:border-primary hover:text-primary hover:glow"
             >
               <Github className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.instagram.com/karan._.sariyala/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-border text-muted-foreground transition-all hover:border-primary hover:text-primary hover:glow"
+            >
+              <Instagram className="h-5 w-5" />
             </a>
           </div>
         </motion.div>
